@@ -54,7 +54,6 @@ class FLCSP_cate:
         self.clip = 1.0
        
     def fit(self, train, test):
-        self.seed = seed
         init_seed(self.seed)
         
         
@@ -210,13 +209,11 @@ class FLCSP_cate:
         self.model = model
                         
     def gradClamp(self, parameters, clip=0.5):
-        self.seed = seed
         init_seed(self.seed)
         for p in parameters:
             p.grad.data.clamp_(min=-clip, max=clip)            
         
     def predict_next(self, sid, prev_iid, items_to_predict, timestamp=0):
-        self.seed = seed
         init_seed(self.seed)
         # Set model for evaluations....
         self.model_item.eval()
