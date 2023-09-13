@@ -80,7 +80,7 @@ session-aware recommendation. More information about the session-rec framework c
     <li>Finally run this command to reproduce the results: <code>python run_config.py conf/in conf/out</code></li>
   </ul>
   <p align="justify">In this study, we use the <a href="https://competitions.codalab.org/competitions/11161#learn_the_details-data2">DIGI</a>, <a href="https://www.kaggle.com/datasets/chadgostopp/recsys-challenge-2015">RSC15</a> and <a href="https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset">RETAIL</a> datasets to evaluate the performance of recently
-published GNN models and to check how they react to the different sizes of items’ embeddings and values of random seeds. The reproducibility files to run the experiments can be found in the <i>conf folder</i>. If you want to run the experiments, copy the configuration file from the <i>conf folder</i> and paste it into the <i>in folder</i>, and again run the command <code>python run_config.py conf/in conf/out</code> to reproduce the results. 
+published GNN models and to check how they react to the different values of embedding sizes and random seeds. We also conduct the experiments related to the tuning of models on the test data instead of validation data. The reproducibility files to run the experiments can be found in the <i>conf folder</i>. If you want to run the experiments, copy the configuration file from the <i>conf folder</i> and paste it into the <i>in folder</i>, and again run the command <code>python run_config.py conf/in conf/out</code> to reproduce the results. 
 </p>
 </body>
 </html>  
